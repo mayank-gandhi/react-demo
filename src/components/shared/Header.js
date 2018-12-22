@@ -9,7 +9,7 @@ import {
   NavItem,
 } from 'reactstrap';
 
-export default class NavbarCustom extends Component{
+export default class Header extends Component{
   constructor(props){
     super(props);
 
@@ -27,7 +27,7 @@ export default class NavbarCustom extends Component{
   render(){
     return(
       <Navbar color="dark" dark expand="md">
-        <NavbarBrand href="/">Mayank</NavbarBrand>
+        <Link to="/" className="navbar-brand">Mayank</Link>
         <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

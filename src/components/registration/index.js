@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SignupForm from '../shared/signup_form';
+import SignupForm from './SignupForm';
 
 export default class Signip extends Component {
   render() {

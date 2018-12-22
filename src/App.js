@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
-import Dashboard from './components/home/dashboard'
-import Login from './components/home/login'
-import Signup from './components/home/signup'
-import NavbarCustom from './components/shared/navbar_custom'
+import Dashboard from './components/home'
+import Login from './components/session'
+import Signup from './components/registration'
+import Header from './components/shared/Header'
 import './App.css';
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <React.Fragment>
-          <NavbarCustom/>
+          <Header />
           <Route exact path='/' component={Dashboard}/>
           <Route path='/login' component={Login}/>
           <Route path='/signup' component={Signup}/>
