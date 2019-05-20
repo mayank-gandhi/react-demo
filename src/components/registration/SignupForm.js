@@ -6,21 +6,26 @@ export default class SignupForm extends Component{
     return(
       <Form>
         <FormGroup>
-          <Label> Id </Label>
+          <Label>Id</Label>
           <Input type='text' name='id'/>
         </FormGroup>
         <FormGroup>
-          <Label> Name </Label>
+          <Label>Name</Label>
           <Input
             type='text' name='name' />
         </FormGroup>
         <FormGroup>
-          <Label> Email </Label>
+          <Label>Email</Label>
           <Input
             type='text' name='email'/>
         </FormGroup>
         <FormGroup>
-          <Label> Dob </Label>
+          <Label>Password</Label>
+          <Input
+            type='password' name='password'/>
+        </FormGroup>
+        <FormGroup>
+          <Label>Dob</Label>
           <Input
             type='date' name='dob' />
         </FormGroup>
